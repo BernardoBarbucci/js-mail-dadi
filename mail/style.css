@@ -20,37 +20,13 @@
     flex-wrap: wrap;
     flex-direction: column;
 }
-.card-wrapper{
-    max-width: 759px;
-    min-height: 400px;
-    max-height: 2500px;
-    margin: 5rem 7rem 5rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.wrapper > h1{
-    font-size: 4rem;
-    color: white;
-    box-shadow: #000;
-}
-.wrapper > h1:hover{
-    color: rgb(149, 231, 16);
-}
-#startButton{
-    width: 7rem;
-    height: 3rem;
-    margin-top: 2rem;
-    font-size: .8rem;
+label{
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
-#startButton:hover{
-    background-color: rgb(149, 231, 16);
-    border-radius: 20px;
+input{
+    margin-bottom: 2rem;
+    height: 1.5rem;
 }
-#startButton:active {
-    background-color: rgb(145, 0, 0);
-    color: white;
-    font-size: 1rem;
-    font-weight: bolder;
-}
+

@@ -7,27 +7,50 @@
 .container{
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(135deg,  #000, #790000fa);
+    background: linear-gradient(135deg,  #000, #b30202fa);
     padding: 10px;
     color: white;
 }
 .wrapper{
-    max-width: 2000px;
+    max-width: 759px;
     height: 100%;
     margin: 5rem 7rem 5rem;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
-    border: 2px solid white;
 }
 .card-wrapper{
-    max-width: 2000px;
+    max-width: 759px;
     min-height: 400px;
-    max-height: 650px;
+    max-height: 2500px;
     margin: 5rem 7rem 5rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    border: 2px solid white;
+}
+.wrapper > h1{
+    font-size: 4rem;
+    color: white;
+    box-shadow: #000;
+}
+.wrapper > h1:hover{
+    color: rgb(149, 231, 16);
+}
+#startButton{
+    width: 7rem;
+    height: 3rem;
+    margin-top: 2rem;
+    font-size: .8rem;
+    font-weight: bold;
+}
+#startButton:hover{
+    background-color: rgb(149, 231, 16);
+    border-radius: 20px;
+}
+#startButton:active {
+    background-color: rgb(145, 0, 0);
+    color: white;
+    font-size: 1rem;
+    font-weight: bolder;
 }

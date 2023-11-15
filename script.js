@@ -14,7 +14,7 @@ let cardBoard = document.getElementById('cardBoard');
 // 3 eventlistener
 startButton.addEventListener('click', function() {
     // cambia il testo del pulsante quando viene creato
-    startButton.value = 'Thanks!';
+    startButton.value = 'Try again!';
 
     function getRandomArbitrary(min, max) {
         return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -53,11 +53,19 @@ startButton.addEventListener('click', function() {
     let resultElement = document.createElement('p');
     if (diceOne > diceTwo) {
         resultElement.textContent = 'Player A wins!';
-    } else if (diceOne > diceTwo) {
+    } else if (diceOne < diceTwo) {
         resultElement.textContent = 'Player B wins!';
     } else{
-        resultElement.textContent = 'You both suck!';
+        resultElement.textContent = 'It\'s a tie!!';
     }
+    resultElement.style.fontSize = '1rem';
+    resultElement.style.margin = '15px';
+    resultElement.style.width = '10rem';
+    resultElement.style.height = '2rem';
+    resultElement.style.border = '2px solid white';
+    resultElement.style.borderRadius = '5px';
+    resultElement.style.background = 'linear-gradient(135deg,  #000, #b30202fa)'
+    resultElement.style.textAlign = 'center';
     // appendiBimboFinale
     cardBoard.appendChild(resultElement);
 });

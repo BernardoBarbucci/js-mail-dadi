@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg,  #000, #790000fa);
+    padding: 10px;
+    color: white;
+}
+.wrapper{
+    max-width: 2000px;
+    height: 100%;
+    margin: 5rem 7rem 5rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: 2px solid white;
+}
+.card-wrapper{
+    max-width: 2000px;
+    min-height: 400px;
+    max-height: 650px;
+    margin: 5rem 7rem 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 2px solid white;
+}

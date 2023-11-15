@@ -20,5 +20,8 @@ const authorizedEmails = [
 ];
 
 let function verifyEmail() {
-    const
+    // collegamento input
+    const userInput = document.getElementById('emailInput').ariaValueMax;
+    // verifica se l'email è autorizzata
+    
 }

@@ -23,7 +23,7 @@ startButton.addEventListener('click', function() {
     let diceOne = getRandomArbitrary(1, 6);
     let diceTwo = getRandomArbitrary(1, 6);
 
-    // creo due elementi dove printare i risultati
+    // creo due elementi dove printare i risultati + stili
     let windowElementOne = document.createElement('p');
     windowElementOne.textContent = 'Player A score: ' + diceOne;
     windowElementOne.style.fontSize = '1rem';
@@ -45,7 +45,17 @@ startButton.addEventListener('click', function() {
     windowElementTwo.style.borderRadius = '5px';
     windowElementTwo.style.background = 'linear-gradient(135deg, rgb(57, 192, 16), #4e085f)'
     windowElementTwo.style.textAlign = 'center';
-
+    // appendiBimbo
     cardBoard.appendChild(windowElementOne);
     cardBoard.appendChild(windowElementTwo);
+
+    // calcolare il risultato e vedere chi è il vincitore, se il risultato è uguale printare un pareggio
+    let resultElement = document.createElement('p');
+    if (diceOne > diceTwo) {
+        resultElement.textContent = 'Player A wins!';
+    } else if (diceOne > diceTwo) {
+        resultElement.textContent = 'Player B wins!';
+    } else{
+        resultElement.textContent = 'You both suck!';
+    }
 });

@@ -25,12 +25,27 @@ startButton.addEventListener('click', function() {
 
     // creo due elementi dove printare i risultati
     let windowElementOne = document.createElement('p');
-    windowElementOne.textContent = 'First random Dice number: ' + diceOne; 
+    windowElementOne.textContent = 'Player A score: ' + diceOne;
+    windowElementOne.style.fontSize = '1rem';
+    windowElementOne.style.margin = '15px';
+    windowElementOne.style.width = '10rem';
+    windowElementOne.style.height = '2rem';
+    windowElementOne.style.border = '2px solid white';
+    windowElementOne.style.borderRadius = '5px';
+    windowElementOne.style.background = 'linear-gradient(135deg, #153677, #4e085f)'
+    windowElementOne.style.textAlign = 'center';
 
     let windowElementTwo = document.createElement('p');
-    windowElementTwo.textContent = 'Second random Dice number: ' + diceTwo; 
+    windowElementTwo.textContent = 'Player B score: ' + diceTwo; 
+    windowElementTwo.style.fontSize = '1rem';
+    windowElementTwo.style.margin = '15px';
+    windowElementTwo.style.width = '10rem';
+    windowElementTwo.style.height = '2rem';
+    windowElementTwo.style.border = '2px solid white';
+    windowElementTwo.style.borderRadius = '5px';
+    windowElementTwo.style.background = 'linear-gradient(135deg, rgb(57, 192, 16), #4e085f)'
+    windowElementTwo.style.textAlign = 'center';
 
     cardBoard.appendChild(windowElementOne);
     cardBoard.appendChild(windowElementTwo);
-
 });

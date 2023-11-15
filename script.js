@@ -25,10 +25,12 @@ startButton.addEventListener('click', function() {
 
     // creo due elementi dove printare i risultati
     let windowElementOne = document.createElement('p');
-    let windowElementOne.textContent = 'First random Dice number: ' + diceOne; 
+    windowElementOne.textContent = 'First random Dice number: ' + diceOne; 
 
     let windowElementTwo = document.createElement('p');
-    let windowElementTwo.textContent = 'Second random Dice number: ' + diceTwo; 
+    windowElementTwo.textContent = 'Second random Dice number: ' + diceTwo; 
 
+    cardBoard.appendChild(windowElementOne);
+    cardBoard.appendChild(windowElementTwo);
 
-})
+});

@@ -19,9 +19,13 @@ const authorizedEmails = [
     'michele@lol.com',
 ];
 
-let function verifyEmail() {
+function verifyEmail() {
     // collegamento input
     const userInput = document.getElementById('emailInput').ariaValueMax;
     // verifica se l'email è autorizzata
-    
+    if (authorizedEmails.includes(userInput)) {
+        alert('Your email is authorized to access');
+    } else {
+        alert('YOU SHALL NOT PASS');
+    }
 }

@@ -58,4 +58,6 @@ startButton.addEventListener('click', function() {
     } else{
         resultElement.textContent = 'You both suck!';
     }
+    // appendiBimboFinale
+    cardBoard.appendChild(resultElement);
 });

@@ -17,13 +17,18 @@ startButton.addEventListener('click', function() {
     startButton.value = 'Thanks!';
 
     function getRandomArbitrary(min, max) {
-        return Math.floor(Math.random() * max);
+        return Math.floor(Math.random() * (max - min + 1)) + min;
     }
-    // creo un element nuovo dove far uscire il numero random
-    let windowElement = document.createElement('p');
-    windowElement.textContent = (getRandomInt()); 
+    // variabile per dado1 e dado2
+    let diceOne = getRandomArbitrary(1, 6);
+    let diceTwo = getRandomArbitrary(1, 6);
 
+    // creo due elementi dove printare i risultati
+    let windowElementOne = document.createElement('p');
+    let windowElementOne.textContent = 'First random Dice number: ' + diceOne; 
 
+    let windowElementTwo = document.createElement('p');
+    let windowElementTwo.textContent = 'Second random Dice number: ' + diceTwo; 
 
 
 })

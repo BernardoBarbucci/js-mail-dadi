@@ -11,3 +11,19 @@
 const startButton = document.getElementById('startButton');
 // 2 collegare cardBoard 
 let cardBoard = document.getElementById('cardBoard');
+// 3 eventlistener
+startButton.addEventListener('click', function() {
+    // cambia il testo del pulsante quando viene creato
+    startButton.value = 'Thanks!';
+
+    function getRandomArbitrary(min, max) {
+        return Math.floor(Math.random() * max);
+    }
+    // creo un element nuovo dove far uscire il numero random
+    let windowElement = document.createElement('p');
+    windowElement.textContent = (getRandomInt()); 
+
+
+
+
+})
